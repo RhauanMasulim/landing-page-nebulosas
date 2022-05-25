@@ -146,7 +146,7 @@ body{
     z-index: 999;
     }
   
-  button::before {
+  .button::before {
   content: '';
     border-radius: 1000px;
     min-width: calc(300px + 12px);
@@ -166,11 +166,11 @@ body{
     transform: translateY(-6px);
   }
   
-  button:hover::before, button:focus::before {
+  .button:hover::before, .button:focus::before {
     opacity: 1;
   }
   
-  button::after {
+  .button::after {
     content: '';
     width: 30px; height: 30px;
     border-radius: 100%;
@@ -183,7 +183,7 @@ body{
     animation: ring 1.5s infinite;
   }
   
-  button:hover::after, button:focus::after {
+  .button:hover::after, .button:focus::after {
     animation: none;
     display: none;
   }
